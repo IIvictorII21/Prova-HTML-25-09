@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro e Planejamento de Estudos</title>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <h1>Cadastro de conta</h1>
+        <p>Siga fazendo o seu cadastro de conta para poder prosseguir tendo acesso a fazer um cronograma personalizado!
+        </p>
+    </header>
+
+    <!-- MENU DE NAVEGAÇÃO (Presente em todas as páginas) -->
+    <nav>
+        <h2>Menu de Navegação</h2>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cronograma.html">Cronograma e Tabela</a></li>
+            <li><a href="cadastro.html">Cadastro de conta</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTEÚDO PRINCIPAL COM O FORMULÁRIO -->
+    <main>
+        <section>
+            <h2>Formulário de Cadastro e Metas de Estudos</h2>
+            <p>Preencha os dados abaixo para fazer o cadastro da sua conta e poder ter acesso a criar seu cronograma:
+            </p>
+
+            <form action="#" method="post">
+
+                <p>
+                    <label for="nome">Nome do Estudante:</label><br>
+                    <input type="text" id="nome" name="nome" placeholder="Ex: Maria Silva" required>
+                </p>
+
+                <p>
+                    <label for="email">E-mail Acadêmico:</label><br>
+                    <input type="email" id="email" name="email" placeholder="aluno@escola.com" required>
+                </p>
+
+                <p>
+                    <label for="meta-inicio">Data de Início do Planejamento:</label><br>
+                    <input type="date" id="meta-inicio" name="meta-inicio" required>
+                </p>
+
+                <p>
+                    <label for="foco">Principal Matéria de Foco:</label><br>
+                    <input list="materias" id="foco" name="foco" placeholder="Digite ou selecione..." required>
+                    <datalist id="materias">
+                        <option value="Matemática">
+                        <option value="Linguagens e Redação">
+                        <option value="História e Geografia">
+                        <option value="Biologia e Química">
+                        <option value="Física">
+                        <option value="Informática / Programação">
+                    </datalist>
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Minha principal dificuldado com certeza foi o formulário, comparado as outras tags que aprendemos eu acho bem mais detalhado,
+      isso acaba me fazendo ter mais dificuldade. -->
+
+    <!-- Barra lateral -->
+    <aside>
+        <h3>Dica Rápida</h3>
+        <p>Organize seu ambiente de estudo livre de distrações para otimizar o rendimento diário.</p>
+    </aside>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>Site criado para Prova 25/09/2026. Sem fins lucrativos.</p>
+    </footer>
+
+</body>
+
+</html>
